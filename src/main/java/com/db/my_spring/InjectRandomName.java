@@ -1,4 +1,4 @@
-package com.db.my_spring.annotations;
+package com.db.my_spring;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,9 +7,9 @@ import java.lang.annotation.Target;
 
 /**
  * @author IrinaTsekhanovich
- * @since 25.08.2021
+ * @since 27.08.2021
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface InjectByType {
+public @interface InjectRandomName {
 }

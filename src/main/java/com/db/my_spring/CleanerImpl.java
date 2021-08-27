@@ -1,14 +1,17 @@
 package com.db.my_spring;
 
-import com.db.my_spring.annotations.InjectRandomInt;
-
 /**
  * @author Evgeny Borisov
  */
 public class CleanerImpl implements Cleaner {
 
-    @InjectRandomInt(min=3,max = 5)
+    @InjectRandomInt(min = 3, max = 5)
     private int repeat;
+
+
+    public CleanerImpl() {
+        System.out.println("repeat = " + repeat);
+    }
 
     @Override
     public void clean() {

@@ -1,5 +1,7 @@
 package com.db.my_spring;
 
+import lombok.Setter;
+
 /**
  * @author Evgeny Borisov
  */
